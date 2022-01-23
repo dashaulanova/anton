@@ -1,0 +1,43 @@
+button {
+	font-size: 40px;
+	color: red;
+}
+
+h1 {
+	color: red;
+}
+
+p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.decoding {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.popup {
+	background-color: rgb(227, 211, 211, 0.2);
+	display: none;
+	width: 300px;
+	z-index: 1;
+}
+
+
+.popup img {
+	width: 100%;
+}
+
+.wrapper-popup {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.visible {
+	display: block;
+}

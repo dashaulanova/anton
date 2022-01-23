@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>антонов день</title>
+</head>
+<body>
+	<h1>Антон Павлов</h1>
+	<h2>Кто это?</h2>
+	<div class="decoding">
+		<button class="a-button-popup">А</button>
+		<button class="n-button-popup">Н</button>
+		<button class="t-button-popup">Т</button>
+		<button class="o-button-popup">О</button>
+		<button class="n2-button-popup">Н</button>
+	</div>
+	<div class="wrapper-popup">
+		<div class="popup a_popup">
+					<p>АЛЬФАЧ</p>
+					<img src="images/альфач.jpeg" alt="фото альфача">
+				</div>
+		<div class="popup n_popup">
+			<p>НЕЗАВИСИМОСТЬ</p>
+			<img src="images/антон отдыхает.jpeg" alt="фото альфача">
+		</div>
+
+		<div class="popup t_popup">
+			<p>ТАЛАНТ</p>
+			<img src="images/талант.jpeg" alt="фото альфача">
+		</div>
+		<div class="popup o_popup">
+			<p>ОТЛИЧНАЯ ФАНТАЗИЯ</p>
+			<img src="images/фантазия.jpeg" alt="фото альфача">
+		</div>
+		<div class="popup n2_popup">
+			<p>НЕПОВТОРИМОСТЬ</p>
+			<img src="images/неповторимость.jpeg" alt="фото альфача">
+		</div>
+	</div>
+	<script type="text/javascript">
+		let a_button = document.querySelector('.a-button-popup');
+    	a_button.addEventListener('click', a_showPopup);
+    	a_button.addEventListener('dblclick', a_hidePopup);
+
+    	function a_showPopup() {
+        	document.querySelector('.a_popup').classList.add('visible');
+        	console.log('showPopup работает');
+        }
+
+        function a_hidePopup() {
+        	document.querySelector('.a_popup').classList.remove('visible');
+        	console.log('showPopup работает');
+        }
+
+        let n_button = document.querySelector('.n-button-popup');
+    	n_button.addEventListener('click', n_showPopup);
+    	n_button.addEventListener('dblclick', n_hidePopup);
+
+    	function n_showPopup() {
+        	document.querySelector('.n_popup').classList.add('visible');
+        	console.log('showPopup работает');
+        }
+
+        function n_hidePopup() {
+        	document.querySelector('.n_popup').classList.remove('visible');
+        	console.log('showPopup работает');
+        }
+
+        let t_button = document.querySelector('.t-button-popup');
+    	t_button.addEventListener('click', t_showPopup);
+    	t_button.addEventListener('dblclick', t_hidePopup);
+
+    	function t_showPopup() {
+        	document.querySelector('.t_popup').classList.add('visible');
+        	console.log('showPopup работает');
+        }
+
+        function t_hidePopup() {
+        	document.querySelector('.t_popup').classList.remove('visible');
+        	console.log('showPopup работает');
+        }
+
+        let o_button = document.querySelector('.o-button-popup');
+    	o_button.addEventListener('click', o_showPopup);
+    	o_button.addEventListener('dblclick', o_hidePopup);
+
+    	function o_showPopup() {
+        	document.querySelector('.o_popup').classList.add('visible');
+        	console.log('showPopup работает');
+        }
+
+        function o_hidePopup() {
+        	document.querySelector('.o_popup').classList.remove('visible');
+        	console.log('showPopup работает');
+        }
+
+        let n2_button = document.querySelector('.n2-button-popup');
+    	n2_button.addEventListener('click', n2_showPopup);
+    	n2_button.addEventListener('dblclick', n2_hidePopup);
+
+    	function n2_showPopup() {
+        	document.querySelector('.n2_popup').classList.add('visible');
+        	console.log('showPopup работает');
+        }
+
+        function n2_hidePopup() {
+        	document.querySelector('.n2_popup').classList.remove('visible');
+        	console.log('showPopup работает');
+        }
+	</script>
+</body>
+</html>
